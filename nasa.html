@@ -1,0 +1,87 @@
+<html>
+<head>
+  <title>Marcos Rodriguez Website</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a>
+          <ul class="dropdown">
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Software</a></li>
+          </ul>
+         </li>
+      </ul>
+    </div>
+    <div class="banner">
+      <div class="project-text">
+        <h1>NASA Mars Regolith Excavator</h1>
+        <h4>Overview:</h4>
+        <p>Looking for things to do during quarantine, I found a NASA design
+           challenge hosted by GrabCad. The light-weight excavator vehicle under
+           development facilitates the transport of the vehicle through space,
+           but also limits the downward force required by traditional excavation
+           techniques. The challenge consisted of improving the excavator/regolith
+           storage drum for their vehicle to use.
+          </p>
+          <h4>Purpose:</h4>
+          <ul>
+            <li>Practice designing under set parameters and expected outcomes</li>
+            <li>Get exposure to the design techniques used at NASA</li>
+            <li>Practice CAD and SolidWorks simulation</li>
+            <li>Practice product rendering and presentation</li>
+          </ul>
+          <h4>Challenges:</h4>
+          <ul>
+            <li>Learn a new software and debug simulation and provide results
+                within deadlines</li>
+            <li>Create a simulation that would provide accurate results, but
+                use assumptions that were valid</li>
+          </ul>
+          <h4>Process:</h4>
+          <ul>
+            <li>Coil modeled as a perfect conducting surface</li>
+            <li>Air sphere modeled encompassing the two coils and infinite
+                boundary conditions on the outer surface of the air sphere</li>
+            <li>Virtual circuits attached to inputs and outputs of coils</li>
+            <li>Single coil simulations to optimize coil quality factor using
+                coil size and coil turns as variable parameters (top figure)
+              </li>
+            <li>Two coil simulations to optimize power transfer efficiency using
+                trace thickness as variable parameter in parametric sweep
+                (bottom figure)</li>
+          </ul>
+          <h4>Outcome:</h4>
+          <ul>
+            <li>Spring loaded shovels are set by ground reaction force when in
+                contact and triggered when the counter force is insufficient
+                (no longer in contact with the ground)</li>
+            <li>A drum is made of three modulses that consist of two
+                oppposite facing shovels that trigger at the same time, allowing
+                for some cancelation of forces and decreasing net force on the
+                mechanism</li>
+            <li>Spring loaded shovels work in the direction of gravitational
+                force and the rotation of the drum to maximize momentum when
+                coming into contact with the ground</li>
+            <li>Aluminum sheet metal assembly with weight saving cut-outs where
+                possible to maximize regolith collection capacity to weight
+                ratio</li>
+          </ul>
+          <h4>Things to consider if future design iterations persued:</h4>
+          <ul>
+            <li>Springs loose elasticity over time - because this excavaotor is
+                to be used shortly before human arrival, parts should only family
+                after replacement and maintanance is possible</li>
+            <li>Further sand proofing required to prevent jamming and friction</li>
+          </ul>
+      </div>
+  </div>
+</div>
+</body>
+</html>

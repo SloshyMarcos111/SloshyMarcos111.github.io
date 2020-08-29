@@ -1,0 +1,92 @@
+<html>
+<head>
+  <title>Marcos Rodriguez Website</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a>
+          <ul class="dropdown">
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Software</a></li>
+          </ul>
+         </li>
+      </ul>
+    </div>
+    <div class="banner">
+      <div class="project-text">
+        <h1>Magnetic Resonance Wireless Drone Charging</h1>
+        <div class="title_images">
+
+          <img src="images/droneimages/drone3.JPG" width="400" height="320">
+          <img src="images/droneimages/drone4.JPG" width="400" height="320">
+          <img src="images/droneimages/drone5.JPG" width="400" height="320">
+          <img src="images/droneimages/drone6.JPG" width="400" height="320">
+        </div>
+        <h4>Overview:</h4>
+        <div class="overview_images">
+          <img src="images/droneimages/drone7.png" width="400" height="220">
+          <img src="images/droneimages/drone8.png" width="400" height="260">
+        </div>
+        <p>With drone technology advancing quickly, drone applications continue
+           to grow. Being one of the major limiting factors, flight time should
+           be extended so drones can continue their mission without traditional
+           charging interruptions, where drones would abandon the mission and
+           have to land to charge. My capstone project group aimed to solve this
+           by providing long distance wireless charging through magnetic
+           resonance technology. Although the project was cut short by the
+           Covid-19 pandemic, we made significant progress in arranging the
+           schematics, simulations, and developing drone attachment designs.
+           My role in the project was to complete the coil simulation
+           and optimization.
+          </p>
+          <h4>Purpose:</h4>
+          <ul>
+            <li>Use a multiphysics simulation software (Comsol) to simulate
+                magnetic resonance power transfer between a transmitter and
+                receiver coil</li>
+            <li>Optimize coil design for long distance  power transfer and use
+                these optimized parameters to manufacture coil</li>
+          </ul>
+          <h4>Challenges:</h4>
+          <ul>
+            <li>Learn a new software and debug simulation and provide results
+                within deadlines</li>
+            <li>Create a simulation that would provide accurate results, but
+                use assumptions that were valid</li>
+          </ul>
+          <h4>Process:</h4>
+          <ul>
+            <li>Coil modeled as a perfect conducting surface</li>
+            <li>Air sphere modeled encompassing the two coils and infinite
+                boundary conditions on the outer surface of the air sphere</li>
+            <li>Virtual circuits attached to inputs and outputs of coils</li>
+            <li>Single coil simulations to optimize coil quality factor using
+                coil size and coil turns as variable parameters (top figure)
+              </li>
+            <li>Two coil simulations to optimize power transfer efficiency using
+                trace thickness as variable parameter in parametric sweep
+                (bottom figure)</li>
+          </ul>
+          <h4>Outcome:</h4>
+          <ul>
+            <li>31.4 x 31.4 cm (30 + 2*trace width) coil with 11 turns as
+                optimal</li>
+            <li>Achieves over 40% efficiency at 30 cm between coils</li>
+          </ul>
+          <h4>Skills Learned:</h4>
+          <ul>
+            <li>Comsol simulation techniques</li>
+            <li>Magnetic resonance and coil concepts</li>
+          </ul>
+      </div>
+  </div>
+</div>
+</body>
+</html>

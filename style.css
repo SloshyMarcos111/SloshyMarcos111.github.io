@@ -1,0 +1,540 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+html
+{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9),
+  rgba(0, 0, 0, 0.6));
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+.menu
+{
+  font-family: monospace;
+  position: fixed;
+  background-color: black;
+  min-width: 100%;
+  z-index: 2;
+}
+
+.menu ul li a
+{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 21px 14px;
+  display: block;
+  float: left;
+}
+
+.menu ul
+{
+  float: left;
+}
+
+.menu ul li
+{
+  float: left;
+  list-style: none;
+  position: relative;
+}
+
+.menu ul li ul
+{
+  display: none;
+  position: absolute;
+  margin-top: 55px;
+  background-color: black;
+  width: auto;
+}
+
+.menu ul li:hover ul
+{
+  display: block;
+}
+
+.menu ul li ul li a
+{
+  padding: 15px 16px;
+}
+
+.menu ul li ul li
+{
+  width: 100px;
+}
+
+.menu ul li:hover, .menu ul li ul li a:hover
+{
+  transition: all .3s ease-in;
+  background-color: grey;
+}
+
+.banner
+{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.app-text
+{
+  text-align: center;
+}
+
+.app-text h1
+{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 800px;
+  text-align: center;
+}
+
+.app-text h2
+{
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 800px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.app-picture
+{
+  display: block;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 800px;
+  text-align: center;
+}
+
+.app-picture img
+{
+  border-radius: 50%;
+  border: 3px solid lightblue;
+}
+
+.button
+{
+  display: inline-block;
+  width: 60%;
+  min-width: 800px;
+}
+
+.btn
+{
+  background: white;
+  border: 3px solid lightblue;
+  width: 120px;
+  height: 120px;
+  color: grey;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.btn img
+{
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 60px;
+}
+
+.btn-one, .btn-two, .btn-three, .btn-four
+{
+  font-family: "Roboto", sans-serif;
+  display: inline-block;
+}
+
+.btn-one:hover, .btn-two:hover, .btn-three:hover, .btn-four:hover
+{
+  border-color: lightblue;
+  color: lightblue;
+  transition: all .3s ease-in;
+  transform: scale(1.1);
+}
+
+.about-me
+{
+  position: absolute;
+  width:  80%;
+  height: 30%;
+  min-width: 800px;
+  margin-top: 200px;
+  color: white;
+  align-items: center;
+}
+
+.about-me-text
+{
+  background: grey;
+  width: 800px;
+  min-width: 800px;
+}
+
+.about-me-text h1
+{
+  color: white;
+  background: grey;
+  padding: 30px 0 0 30px;
+}
+
+.about-me-text p
+{
+  color: white;
+  padding: 30px;
+}
+
+.sidemenu
+{
+  margin-top: 50%;
+  margin-left: 97%;
+  position: absolute;
+}
+
+.sidemenu ul
+{
+  list-style: none;
+}
+
+.sidemenu ul li
+{
+  margin-top: 40px;
+}
+
+.sidemenu ul li a
+{
+  border: 1px solid white;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+  margin-right: 75px;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+.sidemenu ul li a:hover
+{
+  border-color: lightblue;
+  color: lightblue;
+  transition: all .3s ease-in;
+}
+
+.allsections
+{
+  z-index: -1;
+  position: absolute;
+  margin-top: 75%;
+  min-width: 100%;
+  background: grey;
+}
+
+.irobot, .amazonrobotics, .techshare
+{
+  width: 50%;
+  min-width: 90%;
+  margin-top: 1000px;
+  margin-bottom: 1000px;
+  margin-left: 5%;
+  padding: 200px 0 30px 30px;
+  background: white;
+  border-radius: 20px;
+  color: black;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.hardware, .software, .experience
+{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 100px 110px;
+  min-width: 100vh;
+  font-size: 2em;
+  color: white;
+  background-color: gray;
+  padding-left: 10%;
+}
+
+.experience
+{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-width: 100vh;
+  font-size: 2em;
+  color: white;
+  background-color: gray;
+}
+
+.irobot-image
+{
+  margin-left: 65%;
+}
+
+.amazon-image
+{
+  margin-left: 65%;
+}
+
+.techshare-image
+{
+  margin-left: 60%;
+}
+
+.irobot-image img, .amazon-image img, .techshare-image img
+{
+  position: absolute;
+  border-radius: 10px;
+}
+
+h2
+{
+  padding-top: 20px;
+  font-size: 30px;
+  width: 640px;
+  position: relative;
+  color: grey;
+}
+
+.irobot p, .amazonrobotics p, .techshare p, .hardware p, .software p
+{
+  text-transform: none;
+  width: 700px;
+  font-size: 20px;
+  position: relative;
+  margin: 30px 0;
+  line-height: 25px;
+  color: black;
+}
+
+.grid-container
+{
+  display: flex;
+  justify-content: center;
+}
+
+.grid
+{
+  margin: 40px 0 0 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  text-align: center;
+}
+
+.grid:after,
+{
+  clear: both;
+}
+
+.grid:after, .box:before
+{
+  content: "";
+  display: table;
+}
+
+.grid li, .experience-grid li
+{
+  width: 250px;
+  height: 280px;
+  display: inline-grid;
+}
+
+.box
+{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.box:hover
+{
+  transform: scale(1.1);
+  z-index: 3;
+}
+
+.gripper
+{
+  background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
+  url(images/gripper1.jpg);
+  background-size: cover;
+}
+
+.drone
+{
+  background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
+  url(images/charging1.jpg);
+  background-size: cover;
+}
+
+.nasa{
+  background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
+  url(images/render3.jpg);
+  background-size: cover;
+}
+
+.modeling
+{
+  background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
+  url(images/helmet-render.jpg);
+  background-size: cover;
+}
+
+.walker
+{
+  background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
+  url(images/walker.jpg);
+  background-size: cover;
+}
+
+.machine-shop
+{
+  background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
+  url(images/machine.png);
+  background-size: cover;
+}
+
+/* Software section */
+
+.animation
+{
+  background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
+  url(images/animation1.jpg);
+  background-size: cover;
+}
+
+.solitaire
+{
+  background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
+  url(images/machine.png);
+  background-size: cover;
+}
+
+.info
+{
+  position: absolute;
+  width: inherit;
+  height: inherit;
+}
+
+h3
+{
+  text-transform: none;
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  margin: 0 30px;
+  padding: 100px 0 0 0;
+  line-height: 1.5;
+}
+
+.experience-buttons
+{
+  display: inline-block;
+  width: 60%;
+  min-width: 100%;
+  background: green;
+}
+
+.experience-btn
+{
+  background: white;
+  border: 3px solid lightblue;
+  width: 400px;
+  height: 200px;
+  color: grey;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.experience-btn img
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+/*Projects*/
+
+/*Gripper*/
+
+.banner .app-text h4
+{
+  padding-top: 60px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  width: 640px;
+  position: relative;
+  color: lightgray;
+}
+
+.banner .app-text p, .banner .app-text ul
+{
+  font-size: 15px;
+  padding-bottom: 40px;
+  position: relative;
+  line-height: 25px;
+  color: white;
+  float: left;
+  width: 920px;
+}
+
+.title_images
+{
+  position: absolute;
+  margin-left: 800px;
+  float: right;
+}
+
+.title_images img
+{
+  padding-bottom: 200px;
+}
+
+.side_images
+{
+  position: absolute;
+  margin-left: 800px;
+}
+
+.overview_images
+{
+  position: relative;
+  padding: 50px;
+  text-align: center;
+}
+
+.overview_images img
+{
+  padding-right: 30px;
+}
