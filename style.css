@@ -16,6 +16,27 @@ html
   scroll-behavior: smooth;
 }
 
+/*Scroll bar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 .menu
 {
   font-family: monospace;
@@ -274,7 +295,6 @@ html
   font-size: 2em;
   color: white;
   background-color: gray;
-  padding-left: 10%;
 }
 
 .experience
@@ -284,7 +304,7 @@ html
   min-width: 100vh;
   font-size: 2em;
   color: white;
-  background-color: gray;
+  background-color: grey;
 }
 
 .irobot-image
@@ -484,57 +504,70 @@ h3
   width: 200px;
 }
 
-/*Projects*/
+/*Project pages*/
 
-/*Gripper*/
-
-.banner .app-text h4
-{
-  padding-top: 60px;
-  padding-bottom: 15px;
-  font-size: 30px;
-  width: 640px;
-  position: relative;
-  color: lightgray;
-}
-
-.banner .app-text p, .banner .app-text ul
-{
-  font-size: 15px;
-  padding-bottom: 40px;
-  position: relative;
-  line-height: 25px;
-  color: white;
-  float: left;
-  width: 920px;
-}
-
-.title_images
+.project-banner
 {
   position: absolute;
-  margin-left: 800px;
-  float: right;
+  width: 100%;
+  color: white
 }
 
-.title_images img
+.project-text
 {
-  padding-bottom: 200px;
+  margin-left: 50px;
 }
 
-.side_images
+.project-text h1
 {
-  position: absolute;
-  margin-left: 800px;
-}
-
-.overview_images
-{
-  position: relative;
-  padding: 50px;
+  display: block;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
   text-align: center;
+  min-width: 800px;
 }
 
-.overview_images img
+.project-text h4
 {
-  padding-right: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  min-width: 800px;
+  font-size: 24px;
+}
+
+.project-text p
+{
+  display: block;
+  margin-right: auto;
+  margin-bottom: 80px;
+  width: 80%;
+  min-width: 800px;
+}
+
+.project-text ul
+{
+  margin-left: 20px;
+}
+
+.project_images
+{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.project_images img
+{
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.center_image
+{
+  text-align: center;
+  padding: 40px;
 }
