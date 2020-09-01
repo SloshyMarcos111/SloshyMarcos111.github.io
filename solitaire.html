@@ -1,0 +1,68 @@
+<html>
+<head>
+  <title>Marcos Rodriguez Website</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a>
+          <ul class="dropdown">
+            <li><a href="#">Hardware</a></li>
+            <li><a href="#">Software</a></li>
+          </ul>
+         </li>
+      </ul>
+    </div>
+    <div class="project-banner">
+      <div class="project-text">
+        <h1>Peg Solitaire Game</h1>
+        <h4>Overview:</h4>
+        <p>Developed a peg solitaire game that can be played through terminal.
+           Based on the arguments to the main class, the board can be set to the
+           default, European, or Triangle styles of the board.</p>
+          <h4>Purpose:</h4>
+          <ul>
+            <li>Use object-oriented programming to develop a peg solitaire game
+                that reuses code for different modes of play</li>
+            <li>Implementation of decorator pattern</li>
+          </ul>
+          <div class="project_images">
+            <figure>
+              <img src="images/solitaireimages/solitaire1.jpg" width="400" height="400">
+              <img src="images/solitaireimages/solitaire2.jpg" width="250" height="250">
+              <img src="images/solitaireimages/solitaire3.jpg" width="250" height="250">
+              <figcaption>Terminal view of different board settings from
+                          left to right: European style size 9 board with empty
+                          space set 9,9, Triangular size 7 board with empty 
+                          space set to 7,7, Default board with undedited size
+                          and empty space</figcaption>
+            </figure>
+          </div>
+          <h4>Outcome:</h4>
+          <ul>
+            <li>Each board is a different class </li>
+            <li>The board type, empty space position, and size can be set by
+                the user</li>
+            <li>Each marble is defined by a enum that can either be in play,
+                taken, or out of bounds</li>
+            <li>Code that is reused is in an abstract board class</li>
+            <li>Error messages displayed when invalid inputs are entered</li>
+          </ul>
+          <h4>Skills Demonstrated and Learned:</h4>
+          <ul>
+            <li>Object oriented programming</li>
+            <li>Efficient and robust code implementation</li>
+            <li>Developing a program that can be easily extended</li>
+            <li>Extensive testing of program</li>
+          </ul>
+      </div>
+  </div>
+</div>
+</body>
+</html>

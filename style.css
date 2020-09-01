@@ -307,6 +307,11 @@ html
   background-color: grey;
 }
 
+.irobot, .amazonrobotics, .techshare
+{
+  text-align: left;
+}
+
 .irobot-image
 {
   margin-left: 65%;
@@ -444,14 +449,14 @@ h2
 .animation
 {
   background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
-  url(images/animation1.jpg);
+  url(images/animationimages/animation3.gif);
   background-size: cover;
 }
 
 .solitaire
 {
   background: linear-gradient(rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.30)),
-  url(images/machine.png);
+  url(images/solitaireimages/solitaire1.jpg);
   background-size: cover;
 }
 
@@ -475,33 +480,42 @@ h3
 
 .experience-buttons
 {
-  display: inline-block;
-  width: 60%;
-  min-width: 100%;
-  background: green;
+  min-width: 800px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.experience-btn
+.irobot-experience-btn, .amazon-experience-btn, .techshare-experience-btn
 {
-  background: white;
-  border: 3px solid lightblue;
-  width: 400px;
+  width: 200px;
   height: 200px;
-  color: grey;
-  text-decoration: none;
-  font-size: 20px;
-  margin-right: 20px;
-  margin-left: 20px;
-  text-transform: uppercase;
-  border-radius: 4px;
-  padding: 5px;
+  margin-left: 80px;
+  margin-right: 80px;
 }
 
-.experience-btn img
+.irobot-experience-btn img
 {
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 300px;
+  transform: translate(0, 65px);
+}
+.amazon-experience-btn img
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+  transform: translate(0, 110px);
+}
+
+.techshare-experience-btn img
+{
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  transform: translate(0, 0);
 }
 
 /*Project pages*/
