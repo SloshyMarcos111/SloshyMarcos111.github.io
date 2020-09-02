@@ -271,32 +271,6 @@ html
   background: grey;
 }
 
-.irobot, .amazonrobotics, .techshare
-{
-  width: 50%;
-  min-width: 90%;
-  margin-top: 1000px;
-  margin-bottom: 1000px;
-  margin-left: 5%;
-  padding: 200px 0 30px 30px;
-  background: white;
-  border-radius: 20px;
-  color: black;
-  font-size: 40px;
-  text-transform: uppercase;
-}
-
-.hardware, .software, .experience
-{
-  margin-top: 150px;
-  margin-bottom: 50px;
-  padding: 100px 110px;
-  min-width: 100vh;
-  font-size: 2em;
-  color: white;
-  background-color: gray;
-}
-
 .experience
 {
   margin-top: 50px;
@@ -309,7 +283,36 @@ html
 
 .irobot, .amazonrobotics, .techshare
 {
+  width: 90%;
+  min-width: 1100px;
+  padding: 200px 0 30px 30px;
+  background: white;
+  border-radius: 20px;
+  color: black;
+  font-size: 40px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  margin-bottom: 1000px;
+  margin-top: 1000px;
+
+
+}
+
+.hardware, .software, .experience
+{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  padding: 100px 110px;
+  width: 100%;
+  font-size: 2em;
+  color: white;
+  background-color: gray;
+}
+
+.irobot, .amazonrobotics, .techshare
+{
   text-align: left;
+  min-width:
 }
 
 .irobot-image
@@ -330,7 +333,6 @@ html
 .irobot-image img, .amazon-image img, .techshare-image img
 {
   position: absolute;
-  border-radius: 10px;
 }
 
 h2
@@ -345,6 +347,7 @@ h2
 .irobot p, .amazonrobotics p, .techshare p, .hardware p, .software p
 {
   text-transform: none;
+  min-width: 700px;
   width: 700px;
   font-size: 20px;
   position: relative;
