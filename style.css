@@ -211,6 +211,7 @@ html
   background: grey;
   width: 800px;
   min-width: 800px;
+  padding: 30px;
 }
 
 .about-me-text h1
@@ -223,7 +224,9 @@ html
 .about-me-text p
 {
   color: white;
-  padding: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .sidemenu
@@ -271,16 +274,6 @@ html
   background: grey;
 }
 
-.experience
-{
-  margin-top: 50px;
-  margin-bottom: 50px;
-  min-width: 100vh;
-  font-size: 2em;
-  color: white;
-  background-color: grey;
-}
-
 .irobot, .amazonrobotics, .techshare
 {
   width: 90%;
@@ -294,19 +287,18 @@ html
   margin: 0 auto;
   margin-bottom: 1000px;
   margin-top: 1000px;
-
-
 }
 
-.hardware, .software, .experience
+.hardware, .software
 {
+  min-width: 600px;
   margin-top: 150px;
   margin-bottom: 50px;
-  padding: 100px 110px;
-  width: 100%;
+  padding: 100px;
   font-size: 2em;
   color: white;
   background-color: gray;
+  text-align: center;
 }
 
 .irobot, .amazonrobotics, .techshare
@@ -369,6 +361,7 @@ h2
   list-style: none;
   display: block;
   text-align: center;
+  max-width: 1000px;
 }
 
 .grid:after,
@@ -533,6 +526,7 @@ h3
 .project-text
 {
   margin-left: 50px;
+  padding-bottom: 100px;
 }
 
 .project-text h1
@@ -574,8 +568,15 @@ h3
 .project_images
 {
   text-align: center;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
+
+figure
+{
+  margin-top: 40px;
+}
+
 
 .project_images img
 {
