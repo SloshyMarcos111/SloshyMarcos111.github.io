@@ -327,6 +327,23 @@ html
   position: absolute;
 }
 
+.jump
+{
+  background: grey;
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.jump:hover
+{
+  background: lightblue;
+  transition: all .3s ease-in;
+}
+
 h2
 {
   padding-top: 20px;
