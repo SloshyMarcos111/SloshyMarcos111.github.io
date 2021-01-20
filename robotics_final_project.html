@@ -22,15 +22,19 @@
     </div>
     <div class="project-banner">
       <div class="project-text">
-        <h1>ArUco Navigation and Follow (C++, Python, Gazebo, OpenCV, ArUco) (Figures coming soon)</h1>
-        <!--<div class="project_images">
+        <h1>ArUco Navigation and Follow (C++, Python, Gazebo, OpenCV, ArUco) (Figures in process)</br>
+          <a class="pdf-button" href="https://github.com/NikhilCBhat/cs4610-final-project.git"
+             target="_blank">Github Repository</a>
+        </h1>
+
+        <div class="project_images">
           <figure>
-            <img src="images/animationimages/animation1.gif" width="500" height="440">
-            <figcaption>GUI view of interpreted animation designed in Java with
-                        the SWING library that can edit the animation file directly</figcaption>
+            <img src="images/gazeboimages/mbot.jpg" width="500" height="440">
+            <figcaption>mBot Ranger platform used in project</figcaption>
           </figure>
-        </div>-->
-        <h4>Overview:</h4>
+        </div>
+        <h4>Overview:
+                </h4>
         <p>Worked with a team of 4 to design a system to navigate a map filled
            with ArUco Markers. Before physical implementation, the design was
            tested in Gazebo. The physical platform of the project was an mBot Ranger
@@ -44,9 +48,19 @@
            applications are found a lot in warehouse automation.
            The design can also serve as a marker follower and would be ideal
            for primary and secondary robot navigation.</p>
+
+
+           <div class="project_images">
+            <figure>
+              <img style="background-color: lightgrey" src="images/gazeboimages/mbot-flowchart.png" width="500" height="440">
+              <figcaption>Flow chart of solution design</figcaption>
+              <img src="images/gazeboimages/mbot-fitted.png" width="500" height="440">
+              <figcaption>Project mBot Ranger with fitted IP camera (smartphone)</figcaption>
+            </figure>
+          </div>
           <h4>Purpose:</h4>
           <ul>
-            <li>To collaborate with a team to produce an original solution to
+            <li>Collaborate with a team to produce an original solution to
                 a problem.</li>
             <li>Design a system that can allow for navigation to points of
                 interest that are within range.</li>
@@ -59,14 +73,21 @@
             <li>Adjust design for physical implementation (sensor noise,
                 mechanical issues, etc.)</li>
           </ul>
-          <!--<div class="project_images">
+          <div class="project_images">
             <figure>
-              <img src="images/animationimages/animation3.gif" width="500" height="440">
-              <img src="images/animationimages/animation2.gif" width="400" height="340">
-              <figcaption>GUI view of interpreted animation file and animation
-                          text file to be interpreted</figcaption>
+              <img src="images/gazeboimages/mbot-sim-map.png" width="500" height="440">
+              <img src="images/gazeboimages/aruco-sim-detection.png" width="400" height="240">
+              <figcaption>Gazebo simulation world with hexagonal ArUco Marker arrangement and
+                          their detection by simulated robot</figcaption>
             </figure>
-          </div>-->
+          </div>
+          <div class="project_images">
+            <figure>
+              <img src="images/gazeboimages/physical-aruco-detection.png" width="500" height="440">
+              <figcaption>After simulation validation, the code was implemented
+                          with the physical mBot Ranger and IP Camera</figcaption>
+            </figure>
+          </div>
           <h4>Outcome:</h4>
           <ul>
             <li>Used Gazebo to simulate and validate a control algorithm to
@@ -94,8 +115,11 @@
               </ul>
             </li>
           </ul>
-          <h4>Skills Learned:</h4>
+          <h4>Skills Learned and Personal Contributions:</h4>
           <ul>
+            <li>Simulation robot control program in C++</li>
+            <li>Real world robot control program in Python</li>
+            <li>Implementation and porting of simulation program to real world</li>
             <li>Simulation to real world implementation</li>
             <li>Gazebo simulation/world creation</li>
             <li>OpenCV and ArUco library implementation (C++ and Python)</li>

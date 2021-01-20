@@ -22,29 +22,29 @@
     </div>
     <div class="project-banner">
       <div class="project-text">
-        <h1>Hospital Assistant Robots (ROS, Python) (Figures coming soon)</h1>
-        <!--<div class="project_images">
-          <figure>
-            <img src="images/animationimages/animation1.gif" width="500" height="440">
-            <figcaption>GUI view of interpreted animation designed in Java with
-                        the SWING library that can edit the animation file directly</figcaption>
-          </figure>
-        </div>-->
-        <h4>Overview:
+        <h1>Hospital Assistant Robots (ROS, Python) (Figures in process)</br>
           <a class="pdf-button" href="Project_report-1.pdf" target="_blank">Full IRCA Report</a>
+        </h1>
+        <div class="project_images">
+          <figure>
+            <img src="images/gazeboimages/aws-hospitalworld.png" width="900" height="540">
+            <figcaption>AWS Hospital World</figcaption>
+          </figure>
+        </div>
+        <h4>Overview:
         </h4>
         <p>Worked with a team of 4 to create a solution that uses a primary
            robot (robot P) to guide a visiting robot (robot S) to POIs.
         </p>
         <ul>
-          <li>Robot P:
+          <p>Robot P:</br>
             Has access to an RGB-D camera and a Laser Scanner. It is also
             assumed that this robot can map the environment with the software
             it has on it. This robot cannot access the position of robot S
             or any other topic private to robot S. It can communicate with
             robot S only through a `/comm` topic, which is of type
-            `std_msgs/String`.
-          <li>Robot S:
+            `std_msgs/String`.</p>
+            <p>Robot S:</br>
             We assume that this robot has access only to an RGB camera. This
             robot does not have a Laser Scanner and a software for SLAM or
             Localization. It does not know the map of the Hospital as well.
@@ -53,23 +53,36 @@
             is of type `std_msgs/String`. It can also access
             its own camera topic. This robot can access its other topics as
             well, like other nodes that may process the camera topic and publish
-            processed information on new topics.
-          </li>
+            processed information on new topics.</p>
         </ul>
+        <div class="project_images">
+          <figure>
+            <img src="images/gazeboimages/turtlebot3-rviz.png" width="900" height="540">
+            <figcaption>Turtlebot3 model used for robot P and S and simulated
+                        RGB camera input (rviz)</figcaption>
+          </figure>
+        </div>
           <h4>Challenges:</h4>
           <ul>
             <li>Finding a method to have robot S follow robot M efficiently.</li>
             <li>Tuning gmapping coordinates to optimize map by robot M.</li>
             <li>Interfacing multiple packages together to work seamlessly.</li>
+            <li>Using OpenCV image matries with ROS</li>
           </ul>
-          <!--<div class="project_images">
+          <div class="project_images">
             <figure>
-              <img src="images/animationimages/animation3.gif" width="500" height="440">
-              <img src="images/animationimages/animation2.gif" width="400" height="340">
-              <figcaption>GUI view of interpreted animation file and animation
-                          text file to be interpreted</figcaption>
+              <img src="images/gazeboimages/mapping-hospital.png" width="1100" height="600">
+              <figcaption>Rviz view of mapped area by robot P while Tuning
+                          parameters (Turtlebot3 gmapping package used for maping)</figcaption>
             </figure>
-          </div>-->
+          </div>
+          <div class="project_images">
+            <figure>
+              <img src="images/gazeboimages/mapping-hospital-final.png" width="1100" height="600">
+              <figcaption>Rviz view of mapped area by robot P after tuning
+                          mapping parameters</figcaption>
+            </figure>
+          </div>
           <h4>Outcome:</h4>
           <ul>
             <li>Robot M succesfully maps the AWS Hospital World with sufficient
@@ -78,12 +91,23 @@
                 bonus task.</li>
               </ul>
             </li>
-          <h4>Skills Learned:</h4>
+
+          <div class="project_images">
+            <figure>
+              <img src="images/gazeboimages/hospital-computervision.png" width="1100" height="550">
+              <figcaption>Implementation of pretrained YOLO classifier model in
+                          ROS/Gazebo</figcaption>
+            </figure>
+          </div>
+          <h4>Skills Learned and Individual Contributions:</h4>
           <ul>
             <li>ROS tools and packages</li>
             <li>AWS resources</li>
             <li>Integrating available software packages together and with
                 original code.</li>
+            <li>Implementing computer vision packages with ROS/Gazebo.</li>
+            <li>Mapping and tuning mapping parameters</li>
+            <li>Coordinate transformation and POI rosparam storage</li>
           </ul>
       </div>
   </div>

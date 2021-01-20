@@ -21,7 +21,7 @@
     </div>
     <div class="project-banner">
       <div class="project-text">
-        <h1>Gazebo Robot Maze - Lidar (C++, Gazebo) (Figures coming soon)</h1>
+        <h1>Gazebo Robot Maze - Lidar (C++, Gazebo) (Figures in process)</h1>
         <div class="project_images">
           <figure>
             <img src="images/gazeboimages/lidar-mapping.gif" width="400" height="400">
@@ -30,9 +30,11 @@
           </figure>
         </div>
         <h4>Overview:</h4>
-        <p>Use a Gazebo tank bot (implemented with C++) with simulated lidar
-           sensor and simulated noise to map and reach the maze goal. The
-           control designed uses the lidar inputs to fill an occupancy grid.
+        <p>This project consists of using a Gazebo tank bot
+           (implemented with C++) equipped with a lidar
+           sensor and simulated noise to map and continuously find the optimal
+           path to the goal in parallel.
+           The control designed uses the lidar inputs to fill an occupancy grid.
            The inputs lidar data is transformed from the robot's local
            coordinate frame to the world frame using a transformation matrix.
            The best path to take to the goal is determined with A-star path
@@ -44,7 +46,8 @@
           </ul>
           <h4>Challenges:</h4>
           <ul>
-            <li>Learning to implement a simulated lidar sensor.</li>
+            <li>Implementation of a simulated lidar sensor and the handling of
+                it's data.</li>
             <li>Filter and work around noisy sensor data.</li>
             <li>Implement A-star path finding to get to goal.</li>
           </ul>
@@ -58,15 +61,23 @@
           </div>-->
           <h4>Outcome:</h4>
           <ul>
-            <li>Designed a controller (C++) that uses lidar to map an area with enough
-                accuracy to calculate a path with A-star.</li>
+            <li>A navigation controller (C++) which takes lidar data and maps
+                the area with sufficient accuracy to be able to determine an
+                optimal path using the A-star algorithm.</li>
+            <li>occupancy grid representation displayed in real time in separate
+                rviz window.</li>
           </ul>
-          <h4>Skills Learned:</h4>
+          <h4>Skills Learned/Used:</h4>
           <ul>
             <li>Implementation of occupancy grids and their visual
                 representation</li>
             <li>Path planning (A-star)</li>
+            <li>Transformation of coordinates from local robot coordinate
+                frame to world frame for mapping</li>
+            <li>Trajectory following</li>
             <li>Gazebo simulation</li>
+            <li>C++ threads for simultaneous mapping and path finding.
+            <li>C++ programming</li>
           </ul>
       </div>
   </div>
