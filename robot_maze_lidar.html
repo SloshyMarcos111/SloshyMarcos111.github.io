@@ -1,0 +1,75 @@
+<html>
+<head>
+  <title>Marcos Rodriguez Website</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a>
+          <ul class="dropdown">
+            <li><a href="projects.html#hardware">Hardware</a></li>
+            <li><a href="projects.html#software">Software</a></li>
+          </ul>
+         </li>
+      </ul>
+    </div>
+    <div class="project-banner">
+      <div class="project-text">
+        <h1>Gazebo Robot Maze - Lidar (C++, Gazebo) (Figures coming soon)</h1>
+        <div class="project_images">
+          <figure>
+            <img src="images/gazeboimages/lidar-mapping.gif" width="400" height="400">
+            <figcaption>GUI view of interpreted animation designed in Java with
+                        the SWING library that can edit the animation file directly</figcaption>
+          </figure>
+        </div>
+        <h4>Overview:</h4>
+        <p>Use a Gazebo tank bot (implemented with C++) with simulated lidar
+           sensor and simulated noise to map and reach the maze goal. The
+           control designed uses the lidar inputs to fill an occupancy grid.
+           The inputs lidar data is transformed from the robot's local
+           coordinate frame to the world frame using a transformation matrix.
+           The best path to take to the goal is determined with A-star path
+           finding.</p>
+          <h4>Purpose:</h4>
+          <ul>
+            <li>To independently design a controller to have a robot map and
+                navigate a maze while dealing with noisy sensor data.</li>
+          </ul>
+          <h4>Challenges:</h4>
+          <ul>
+            <li>Learning to implement a simulated lidar sensor.</li>
+            <li>Filter and work around noisy sensor data.</li>
+            <li>Implement A-star path finding to get to goal.</li>
+          </ul>
+          <!--<div class="project_images">
+            <figure>
+              <img src="images/animationimages/animation3.gif" width="500" height="440">
+              <img src="images/animationimages/animation2.gif" width="400" height="340">
+              <figcaption>GUI view of interpreted animation file and animation
+                          text file to be interpreted</figcaption>
+            </figure>
+          </div>-->
+          <h4>Outcome:</h4>
+          <ul>
+            <li>Designed a controller (C++) that uses lidar to map an area with enough
+                accuracy to calculate a path with A-star.</li>
+          </ul>
+          <h4>Skills Learned:</h4>
+          <ul>
+            <li>Implementation of occupancy grids and their visual
+                representation</li>
+            <li>Path planning (A-star)</li>
+            <li>Gazebo simulation</li>
+          </ul>
+      </div>
+  </div>
+</div>
+</body>
+</html>

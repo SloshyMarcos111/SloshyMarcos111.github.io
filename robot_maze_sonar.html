@@ -1,0 +1,84 @@
+<html>
+<head>
+  <title>Marcos Rodriguez Website</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a>
+          <ul class="dropdown">
+            <li><a href="projects.html#hardware">Hardware</a></li>
+            <li><a href="projects.html#software">Software</a></li>
+          </ul>
+         </li>
+      </ul>
+    </div>
+    <div class="project-banner">
+      <div class="project-text">
+        <h1>Gazebo Robot Maze - Sonar (C++, Gazebo) (Figures coming soon)</h1>
+        <!--<div class="project_images">
+          <figure>
+            <img src="images/animationimages/animation1.gif" width="500" height="440">
+            <figcaption>GUI view of interpreted animation designed in Java with
+                        the SWING library that can edit the animation file directly</figcaption>
+          </figure>
+        </div>-->
+        <h4>Overview:</h4>
+        <p>In this project, a Gazebo tank bot with a sonar sensor was used as
+           the platform for a controller to guide the robot to the goal of a
+           maze. The simulated sonar sensor has a angular range of about 30
+           degrees and a distance range of 2 meters and returns a distance value
+           if an object is within this range.</p>
+          <h4>Purpose:</h4>
+          <ul>
+            <li>To independently design a robot controller algorithm (C++) that
+                uses a basic range sensor to navigate to the goal of a maze.</li>
+            <li>Implement designs in Gazebo.</li>
+          </ul>
+          <h4>Challenges:</h4>
+          <ul>
+            <li>Range sensor has limited angular range and does not return
+                angle of detection.</li>
+            <li>Limited sensors required navigation algorithm to have different
+                states in order to avoid cases where bot would get stuck.</li>
+          </ul>
+          <!--<div class="project_images">
+            <figure>
+              <img src="images/animationimages/animation3.gif" width="500" height="440">
+              <img src="images/animationimages/animation2.gif" width="400" height="340">
+              <figcaption>GUI view of interpreted animation file and animation
+                          text file to be interpreted</figcaption>
+            </figure>
+          </div>-->
+          <h4>Outcome:</h4>
+          <ul>
+            <li>Implemented an algorithm to succesfully navigate to the goal
+                of a maze with limited sensor data.</li>
+            <li>Algorithm:
+              <ul>
+                <li>Wall follow allows for navigation to next "doorway"</li>
+                <li>When at a "doorway" and previous wall has been cleared
+                    (no object detected), bot turns towards goal</li>
+                <li>When met with another obstacle, turn based on alternating
+                    turn variable (prevent bot from getting stuck)</li>
+                <li>Continue wall follow on current obstacle</li>
+                <li>Repeat until goal reached</li>
+              </ul>
+            </li>
+          </ul>
+          <h4>Skills Learned:</h4>
+          <ul>
+            <li>Implementation of custom algorithm with limited input</li>
+            <li>Gazebo simulation</li>
+          </ul>
+      </div>
+  </div>
+</div>
+</body>
+</html>

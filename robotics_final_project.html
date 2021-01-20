@@ -1,0 +1,107 @@
+
+<html>
+<head>
+  <title>Marcos Rodriguez Website</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a>
+          <ul class="dropdown">
+            <li><a href="projects.html#hardware">Hardware</a></li>
+            <li><a href="projects.html#software">Software</a></li>
+          </ul>
+         </li>
+      </ul>
+    </div>
+    <div class="project-banner">
+      <div class="project-text">
+        <h1>ArUco Navigation and Follow (C++, Python, Gazebo, OpenCV, ArUco) (Figures coming soon)</h1>
+        <!--<div class="project_images">
+          <figure>
+            <img src="images/animationimages/animation1.gif" width="500" height="440">
+            <figcaption>GUI view of interpreted animation designed in Java with
+                        the SWING library that can edit the animation file directly</figcaption>
+          </figure>
+        </div>-->
+        <h4>Overview:</h4>
+        <p>Worked with a team of 4 to design a system to navigate a map filled
+           with ArUco Markers. Before physical implementation, the design was
+           tested in Gazebo. The physical platform of the project was an mBot Ranger
+           and the sensor used was an RGB camera (IP camera application running
+           on a smartphone). The platform used the OpenCV and ArUco libraries
+           to navigate the map and recognize the markers. The bot searches for
+           the first marker (ordered by ArUco Marker ID) and navigate to it and
+           repeat until all markers are visited.
+           Some applications that this could serve is a robot navigating to a
+           POI and fulfilling a task, then going on to the next. Such
+           applications are found a lot in warehouse automation.
+           The design can also serve as a marker follower and would be ideal
+           for primary and secondary robot navigation.</p>
+          <h4>Purpose:</h4>
+          <ul>
+            <li>To collaborate with a team to produce an original solution to
+                a problem.</li>
+            <li>Design a system that can allow for navigation to points of
+                interest that are within range.</li>
+          </ul>
+          <h4>Challenges:</h4>
+          <ul>
+            <li>Designing original Gazebo world with ArUco Markers in place</li>
+            <li>Port code from simulation platform to physical mBot Ranger
+                platform.</li>
+            <li>Adjust design for physical implementation (sensor noise,
+                mechanical issues, etc.)</li>
+          </ul>
+          <!--<div class="project_images">
+            <figure>
+              <img src="images/animationimages/animation3.gif" width="500" height="440">
+              <img src="images/animationimages/animation2.gif" width="400" height="340">
+              <figcaption>GUI view of interpreted animation file and animation
+                          text file to be interpreted</figcaption>
+            </figure>
+          </div>-->
+          <h4>Outcome:</h4>
+          <ul>
+            <li>Used Gazebo to simulate and validate a control algorithm to
+                implement physically. Created a design that allows for POIs
+                (marked with ArUco tags)to be visited sequentially with a mobile
+                robot equipped with an RGB camera.</li>
+            <li>Navigation Algorithm:
+              <ul>
+                <li>Search for next ArUco (corresponding ID) by rotating</li>
+                <li>Once found (match center of marker with center of input
+                    frame)</li>
+                <li>Continue towards marker with periodic adjustments to
+                    trajectory if centers are misaligned outside of a threshold</li>
+                <li>Repeat with next ArUco ID</li>
+              </ul>
+            </li>
+            <li>Follow Algorithm:
+              <ul>
+                <li>Search for ArUco to follow (corresponding ID) by rotating</li>
+                <li>Once found (match center of marker with center of input
+                    frame)</li>
+                <li>Continue towards marker with periodic adjustments to
+                    trajectory if centers are misaligned outside of a threshold</li>
+                <li>Stop if within a certain range of marker to avoid collision</li>
+              </ul>
+            </li>
+          </ul>
+          <h4>Skills Learned:</h4>
+          <ul>
+            <li>Simulation to real world implementation</li>
+            <li>Gazebo simulation/world creation</li>
+            <li>OpenCV and ArUco library implementation (C++ and Python)</li>
+          </ul>
+      </div>
+  </div>
+</div>
+</body>
+</html>

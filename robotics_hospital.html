@@ -1,0 +1,92 @@
+
+<html>
+<head>
+  <title>Marcos Rodriguez Website</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="container">
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="experience.html" class="active">Experience</a></li>
+        <li><a href="projects.html">Projects</a>
+          <ul class="dropdown">
+            <li><a href="projects.html#hardware">Hardware</a></li>
+            <li><a href="projects.html#software">Software</a></li>
+          </ul>
+         </li>
+      </ul>
+    </div>
+    <div class="project-banner">
+      <div class="project-text">
+        <h1>Hospital Assistant Robots (ROS, Python) (Figures coming soon)</h1>
+        <!--<div class="project_images">
+          <figure>
+            <img src="images/animationimages/animation1.gif" width="500" height="440">
+            <figcaption>GUI view of interpreted animation designed in Java with
+                        the SWING library that can edit the animation file directly</figcaption>
+          </figure>
+        </div>-->
+        <h4>Overview:
+          <a class="pdf-button" href="Project_report-1.pdf" target="_blank">Full IRCA Report</a>
+        </h4>
+        <p>Worked with a team of 4 to create a solution that uses a primary
+           robot (robot P) to guide a visiting robot (robot S) to POIs.
+        </p>
+        <ul>
+          <li>Robot P:
+            Has access to an RGB-D camera and a Laser Scanner. It is also
+            assumed that this robot can map the environment with the software
+            it has on it. This robot cannot access the position of robot S
+            or any other topic private to robot S. It can communicate with
+            robot S only through a `/comm` topic, which is of type
+            `std_msgs/String`.
+          <li>Robot S:
+            We assume that this robot has access only to an RGB camera. This
+            robot does not have a Laser Scanner and a software for SLAM or
+            Localization. It does not know the map of the Hospital as well.
+            Moreover, it cannot access the map information gained by robot P.
+            It can communicate with robot P through a topic named `/comm` which
+            is of type `std_msgs/String`. It can also access
+            its own camera topic. This robot can access its other topics as
+            well, like other nodes that may process the camera topic and publish
+            processed information on new topics.
+          </li>
+        </ul>
+          <h4>Challenges:</h4>
+          <ul>
+            <li>Finding a method to have robot S follow robot M efficiently.</li>
+            <li>Tuning gmapping coordinates to optimize map by robot M.</li>
+            <li>Interfacing multiple packages together to work seamlessly.</li>
+          </ul>
+          <!--<div class="project_images">
+            <figure>
+              <img src="images/animationimages/animation3.gif" width="500" height="440">
+              <img src="images/animationimages/animation2.gif" width="400" height="340">
+              <figcaption>GUI view of interpreted animation file and animation
+                          text file to be interpreted</figcaption>
+            </figure>
+          </div>-->
+          <h4>Outcome:</h4>
+          <ul>
+            <li>Robot M succesfully maps the AWS Hospital World with sufficient
+                accuracy to visit POIs and lead visiting robot S to POIs.</li>
+            <li>Implement a trained computer vision classifier on robot M as a
+                bonus task.</li>
+              </ul>
+            </li>
+          <h4>Skills Learned:</h4>
+          <ul>
+            <li>ROS tools and packages</li>
+            <li>AWS resources</li>
+            <li>Integrating available software packages together and with
+                original code.</li>
+          </ul>
+      </div>
+  </div>
+</div>
+</body>
+</html>
