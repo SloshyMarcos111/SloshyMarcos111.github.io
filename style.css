@@ -92,7 +92,7 @@ html
   width: 100px;
 }
 
-.menu ul li:hover, .menu ul li ul li a:hover
+.menu ul li:hover, .menu ul li ul li:hover
 {
   transition: all .3s ease-in;
   background-color: grey;
